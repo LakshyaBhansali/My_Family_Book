@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="C.css">
+        <title>
+            My family book
+        </title>
+    </head>
+    <body>
+        <h1>My family book</h1>
+        <br>
+        <img src="1.jpg" id="member_image">
+        <br>
+        <h3 id="member_names">Lakshya Bhansali</h3>
+        <br>
+        <br>
+        <br>
+        <button type="button" onclick="next()">Next</button>
+        <script>
+            var image=["2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg"]
+            var names=["Advik Aggarwal","Vijaya Bhansali","Gitika Aggarwal","Mridaksh Bhansali","Garima Jain","Yuvika Bhansali","Neel Bhansali","Bachha Party"]
+            var i=0;
+            function next(){
+                document.getElementById("member_image").innerHTML= image[i];
+                document.getElementById("member_names").innerHTML= names[i];
+                i++;
+            }
+        </script>
+    </body>
+</html>
